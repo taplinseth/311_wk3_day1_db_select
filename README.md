@@ -43,21 +43,21 @@ Also, put the answers in the "Query Responses" section of this README.
 
 ## Query Responses
 
-1.
-  * How many rows were returned:
-  * First name of the first user:
+1. SELECT * FROM users WHERE city LIKE 'Chicago'
+  * How many rows were returned: 7
+  * First name of the first user: Mitsue
 
-2.
-  * How many rows were returned:
-  * What states do they live in:
+2. SELECT state FROM users WHERE first_name LIKE 'Glory'
+  * How many rows were returned: 2
+  * What states do they live in: MD and TX
 
-3.
-  * How many rows were returned:
-  * What's the last email on the list:
+3. SELECT * FROM users WHERE phone1 like '773%'
+  * How many rows were returned: 6
+  * What's the last email on the list: nichelle_meteer@meteer.com
 
 ## Summary
 
 Think about how this data is laid out. Feel free to look in the `initialize.sql` file to see the raw data.
 
-* Do you think it would be easier or harder to search through this data manually or using SQL?
-* What about when the dataset gets larger?
+* Do you think it would be easier or harder to search through this data manually or using SQL? It is much easier to search this data with SQL.
+* What about when the dataset gets larger? If the dataset was larger it would be much harder to search manually.
